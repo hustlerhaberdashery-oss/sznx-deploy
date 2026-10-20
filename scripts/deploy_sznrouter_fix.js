@@ -30,7 +30,7 @@
  */
 import hre from "hardhat";
 
-const SZNX_V2        = "0xD1d619096392279cF0aEF8760258054e160954a5";
+const SZNX_V2        = "0x9b2Fc44646D5157E6A85b13e91b7A1c3fa17c13e";
 const USDC_CRONOS     = "0xc21223249CA28397B4B6541dfFaEcC539BfF0c59"; // secondary stable (routing not yet active in the contract — fine to wire, inert until SZNRouter.swap() enables it)
 const MOCK_USDC       = "0x4AffE1628fB8AF85d51f5eea8b4E3Ba8C806b5Bd"; // what Pool V2 actually pairs against (labeled "usdtToken" in SZNRouter/SZNPool source)
 const SZN_REGISTRY    = "0x794835e7ae213dfE0Dd538F052a6920ab1Ecafa5";
