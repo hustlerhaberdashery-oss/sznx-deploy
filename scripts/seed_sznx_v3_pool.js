@@ -2,7 +2,7 @@
  * Seed SZNPool V3 with real SZNX V3 + freshly-minted MockUSDC.
  *
  * Precondition (must happen BEFORE this script, outside this repo): the V3
- * token owner wallet (0x3c86d185de4b276eba0b21d8485887cbb104cbe5) must mint
+ * token owner wallet (0xA8BECe4b2F0d97d08A6B0c51bE866E0dD624480d) must mint
  * supply and transfer at least SEED_SZNX worth to the deployer wallet below
  * (DEPLOYER_PRIVATE_KEY in .env). This script will check that balance and
  * refuse to proceed (no gas spent beyond the check) if it's insufficient —
@@ -47,7 +47,7 @@ async function main() {
     console.log("\n  ✗ STOP — deployer does not hold enough SZNX V3 to seed.");
     console.log("    Needed :", SEED_SZNX, "SZNX");
     console.log("    Have   :", hre.ethers.formatUnits(have, 18), "SZNX");
-    console.log("\n    The V3 owner wallet (0x3c86d185de4b276eba0b21d8485887cbb104cbe5)");
+    console.log("\n    The V3 owner wallet (0xA8BECe4b2F0d97d08A6B0c51bE866E0dD624480d)");
     console.log("    must mint and transfer SZNX V3 to", deployer.address, "first.");
     console.log("    No transaction has been sent. Exiting.\n");
     process.exit(1);

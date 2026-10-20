@@ -1,6 +1,6 @@
 /**
  * Self-mint SZNX V3 supply to the token's own owner wallet
- * (0x3c86d185de4b276eba0b21d8485887cbb104cbe5 — confirmed on-chain owner()).
+ * (0xA8BECe4b2F0d97d08A6B0c51bE866E0dD624480d — confirmed on-chain owner()).
  *
  * Confirmed on-chain before this script was written:
  *   - mint(address,uint256) exists, selector 0x40c10f19
